@@ -1,0 +1,110 @@
+:root {
+    --cor-principal: #9195cd;
+    --cor-secundaria: #ECDFC5;
+    --cor-terciaria: #2B2B3E;
+    --cor-4: #fcb6fb;
+    --cor-5:#f8d4f7;
+    --cor-hover:#e970e6;
+    --cor-hover2:#a91ba9;
+    --cor-6: #9d00a1;
+    --cor-7:#262d58;
+
+    
+     }
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 80;
+  }
+body{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+#calc{
+    width: 25rem;
+    padding: .5em;
+    border-radius: 3%;
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
+    display: flex;
+    flex-direction: column;
+
+}
+#calc h3 {
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--cor-terciaria);
+    padding: 3%;
+   
+}
+#operations{
+    text-align: right;
+}
+#previous-operation{
+    color: var(--cor-secundaria);
+    padding: .2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+    font-weight: 400;
+    font-size: 2rem;
+}
+#current-operation{
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: .2em;
+    overflow-wrap: break-word;
+}
+#buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+
+}
+#buttons-container button {
+    border: 1px solid transparent;
+    border-radius: 5%;
+    height:4em;
+    font-size: 1.2em;
+    background-color: var(--cor-4);
+}
+#buttons-container .number{
+    background-color: var(--cor-5);
+}
+
+#buttons-container button:hover{
+    background-color: var(--cor-hover) ;
+    border-color: var(--cor-secundaria)
+}
+#buttons-container #equal-btn{
+    grid-column: span 2;
+    background-color: var(--cor-hover);
+}
+#buttons-container #equal-btn:hover{
+    background-color: var(--cor-6);
+    border-color: var(--cor-secundaria);
+}
+
+
